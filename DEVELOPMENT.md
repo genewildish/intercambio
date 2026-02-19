@@ -26,6 +26,7 @@
    ├── Scripts/           # All C# source code
    │   ├── Core/          # Core simulation engine
    │   ├── Entities/      # Node, Network, Message classes  
+   │   ├── Cryptography/  # Crypto operations and security primitives
    │   ├── Programming/   # Visual DSL and execution
    │   ├── UI/           # Game interface components
    │   ├── Levels/       # Level definitions and constraints
@@ -44,19 +45,22 @@
 Focus on building the simulation engine:
 - `Assets/Scripts/Core/` - Tick-based simulator implementation
 - `Assets/Scripts/Entities/` - Node and message entities
+- `Assets/Scripts/Cryptography/` - Basic crypto message types and operations
 - Basic append-only log abstraction
 
-### Phase 2: Visual Programming
+### Phase 2: Visual Programming & Cryptographic Blocks
 Build the node programming interface:
 - Custom Unity editor for visual node assembly
 - Primitive operations (read, append, compare, broadcast)
+- Cryptographic building blocks (encrypt, decrypt, sign, verify, hash, nonce)
 - Integration between visual programs and simulation nodes
 
-### Phase 3: Game Mechanics
-Implement the progressive constraint system:
-- Failure mode injection (network partitions, Byzantine nodes)
-- Victory condition framework
-- Replay and analysis systems
+### Phase 3: Security-Driven Game Mechanics
+Implement the progressive constraint and attack system:
+- Security failure mode injection (eavesdropping, tampering, man-in-the-middle)
+- Cryptographic constraint escalation (encryption → authentication → non-repudiation)
+- Victory condition framework with security requirements
+- Attack visualization and replay systems
 
 ## Testing Strategy
 
@@ -77,15 +81,17 @@ Run tests via Unity's Test Runner (Window → General → Test Runner).
 ## Architecture Principles
 
 1. **Deterministic Simulation**: Every run with identical inputs produces identical outputs
-2. **Progressive Constraint**: Each level adds exactly one new failure mode  
-3. **Emergent Learning**: Players discover distributed systems concepts through necessity
-4. **Fragile by Design**: Bugs in one node propagate through the entire system
+2. **Progressive Security Constraint**: Each level adds exactly one new attack vector or security requirement
+3. **Emergent Learning**: Players discover distributed systems and cryptographic concepts through necessity
+4. **Security Through Failure**: Cryptographic concepts become intuitive when attacks succeed
+5. **Fragile by Design**: Security bugs in one node compromise the entire distributed system
 
 ## Next Steps
 
 1. Implement `ISimulator` concrete class in `Assets/Scripts/Core/`
 2. Create basic `Node` implementation in `Assets/Scripts/Entities/`
-3. Build minimal Unity scene for testing simulation
-4. Add first set of integration tests
+3. Design cryptographic message interfaces in `Assets/Scripts/Cryptography/`
+4. Build minimal Unity scene for testing simulation
+5. Add first set of integration tests focusing on security scenarios
 
 For questions or issues, refer to the main README.md or project documentation.

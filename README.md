@@ -1,10 +1,12 @@
 # Intercambio
 
-A Zachtronics-inspired puzzle game that teaches distributed systems and blockchain concepts through progressive constraint escalation.
+A Zachtronics-inspired puzzle game that teaches distributed systems and blockchain concepts through progressive constraint escalation and cryptographic puzzles.
 
 ## Concept Overview
 
-Players build distributed systems by assembling primitive logic components to solve coordination problems in hostile network environments. Instead of being taught blockchain concepts explicitly, players discover consensus mechanisms organically as they encounter increasingly difficult constraints.
+Players build distributed systems by assembling primitive logic components to solve coordination problems in hostile network environments. Instead of being taught blockchain and cryptographic concepts explicitly, players discover consensus mechanisms, secure communication, and trust protocols organically as they encounter increasingly difficult constraints.
+
+The game integrates **cryptographic mini-games** as essential building blocks - players learn encryption, digital signatures, hash functions, and key exchange not through lectures, but because their distributed systems *break* without proper security.
 
 The game follows the philosophy: *every solution works until it doesn't, and the game never apologizes.*
 
@@ -36,6 +38,7 @@ Simulation Core (C#)
 ├── Tick-Based Simulator
 ├── Node/Network Entities
 ├── Message Passing System
+├── Cryptographic Operations
 ├── Constraint Injection System
 └── Victory Condition Framework
 ```
@@ -47,18 +50,21 @@ Simulation Core (C#)
 - Implement basic Node and Network entities
 - Create tick-based simulation loop
 - Build simple append-only log abstraction
+- Basic cryptographic message types (encryption, signatures, hashes)
 - Minimal Unity scene for testing
 
-### Phase 2: Visual Programming (4-6 weeks)
+### Phase 2: Visual Programming & Crypto Blocks (4-6 weeks)
 - Custom Unity editor for visual node programming
 - Implement primitive operations (read, append, compare, broadcast)
+- Add cryptographic building blocks (encrypt, decrypt, sign, verify, hash)
 - Connect visual programs to simulation nodes
 - Basic monitoring UI to observe system state
 
-### Phase 3: Game Mechanics (4-6 weeks)
-- Constraint escalation system (failure modes)
-- Progressive primitive unlock system
-- Victory condition framework
+### Phase 3: Security-Driven Game Mechanics (4-6 weeks)
+- Constraint escalation system (eavesdropping, tampering, impersonation)
+- Cryptographic failure modes (man-in-the-middle, replay attacks)
+- Progressive security primitive unlock system
+- Victory condition framework with security requirements
 - Replay system and timeline visualization
 
 ### Phase 4: Polish & Content (6-8 weeks)
@@ -69,11 +75,13 @@ Simulation Core (C#)
 
 ## Key Design Principles
 
-1. **Emergent Learning**: Players discover concepts through necessity, not explanation
-2. **Deterministic Simulation**: Every run with same inputs produces identical outcomes
-3. **Progressive Constraint**: Each level adds exactly one new failure mode
-4. **Visual Programming**: Logic assembly through constrained DSL, not traditional coding
-5. **Social Propagation**: Bugs in one node affect the entire distributed system
+1. **Emergent Learning**: Players discover distributed systems and cryptographic concepts through necessity, not explanation
+2. **Security Through Failure**: Crypto concepts are learned when attacks succeed, making abstract security concrete
+3. **Deterministic Simulation**: Every run with same inputs produces identical outcomes
+4. **Progressive Constraint**: Each level adds exactly one new failure mode (eavesdropping → tampering → impersonation)
+5. **Visual Programming**: Logic assembly through constrained DSL, including crypto building blocks
+6. **Social Propagation**: Security failures cascade across the entire distributed system
+7. **Cryptographic Intuition**: Complex crypto operations represented through familiar metaphors (locks, seals, shredders)
 
 ## Project Structure (Planned)
 
@@ -83,6 +91,7 @@ intercambio/
 │   ├── Scripts/
 │   │   ├── Core/                 # Simulation engine
 │   │   ├── Entities/            # Node, Network, Message classes
+│   │   ├── Cryptography/        # Crypto operations and security
 │   │   ├── Programming/         # Visual DSL and execution
 │   │   ├── UI/                  # Game interface
 │   │   └── Levels/              # Level definitions and constraints
