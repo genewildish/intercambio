@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Failed(Child)" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.0249707">
+  <test-suite type="TestSuite" id="1000" name="Intercambio" fullname="Intercambio" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.024971" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1010" name="Intercambio.Tests.dll" fullname="/Users/genejohnson/Dev/intercambio/Library/ScriptAssemblies/Intercambio.Tests.dll" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.020617" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21820" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1011" name="Intercambio" fullname="Intercambio" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.020388" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1012" name="Tests" fullname="Intercambio.Tests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.020232" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="L01BitflipPatrolTests" fullname="Intercambio.Tests.L01BitflipPatrolTests" classname="Intercambio.Tests.L01BitflipPatrolTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.014698" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1003" name="CommitPacket_WithoutPatchingTamper_FailsScenario" fullname="Intercambio.Tests.L01BitflipPatrolTests.CommitPacket_WithoutPatchingTamper_FailsScenario" methodname="CommitPacket_WithoutPatchingTamper_FailsScenario" classname="Intercambio.Tests.L01BitflipPatrolTests" runstate="Runnable" seed="2034620245" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.007361" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="FlipBit_AtTamperedIndex_ThenCommitPacket_SucceedsScenario" fullname="Intercambio.Tests.L01BitflipPatrolTests.FlipBit_AtTamperedIndex_ThenCommitPacket_SucceedsScenario" methodname="FlipBit_AtTamperedIndex_ThenCommitPacket_SucceedsScenario" classname="Intercambio.Tests.L01BitflipPatrolTests" runstate="Runnable" seed="1551327423" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.000632" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="SameInputPackets_ProduceDeterministicXorDiffOutput" fullname="Intercambio.Tests.L01BitflipPatrolTests.SameInputPackets_ProduceDeterministicXorDiffOutput" methodname="SameInputPackets_ProduceDeterministicXorDiffOutput" classname="Intercambio.Tests.L01BitflipPatrolTests" runstate="Runnable" seed="538332446" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.000151" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="XorDiff_WhenOneBitIsTampered_ReturnsTheTamperedIndex" fullname="Intercambio.Tests.L01BitflipPatrolTests.XorDiff_WhenOneBitIsTampered_ReturnsTheTamperedIndex" methodname="XorDiff_WhenOneBitIsTampered_ReturnsTheTamperedIndex" classname="Intercambio.Tests.L01BitflipPatrolTests" runstate="Runnable" seed="546801966" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.000107" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1006" name="OwnershipConflictTests" fullname="Intercambio.Tests.OwnershipConflictTests" classname="Intercambio.Tests.OwnershipConflictTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.004970" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1009" name="NodeCanStoreAndRetrieveState" fullname="Intercambio.Tests.OwnershipConflictTests.NodeCanStoreAndRetrieveState" methodname="NodeCanStoreAndRetrieveState" classname="Intercambio.Tests.OwnershipConflictTests" runstate="Runnable" seed="1101756702" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.000263" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="SingleNodeOwnership_NoConflict" fullname="Intercambio.Tests.OwnershipConflictTests.SingleNodeOwnership_NoConflict" methodname="SingleNodeOwnership_NoConflict" classname="Intercambio.Tests.OwnershipConflictTests" runstate="Runnable" seed="1026052102" result="Failed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.003816" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Should not detect any conflicts
+  Expected: 0
+  But was:  1
+]]></message>
+                <stack-trace><![CDATA[at Intercambio.Tests.OwnershipConflictTests.SingleNodeOwnership_NoConflict () [0x00027] in /Users/genejohnson/Dev/intercambio/Assets/Scripts/Tests/OwnershipConflictTests.cs:46
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1007" name="TwoNodesClaimingSameCoin_DetectsConflict" fullname="Intercambio.Tests.OwnershipConflictTests.TwoNodesClaimingSameCoin_DetectsConflict" methodname="TwoNodesClaimingSameCoin_DetectsConflict" classname="Intercambio.Tests.OwnershipConflictTests" runstate="Runnable" seed="304855500" result="Passed" start-time="2026-02-25 05:09:21Z" end-time="2026-02-25 05:09:21Z" duration="0.000166" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: /Users/genejohnson/Dev/intercambio/TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
