@@ -152,6 +152,10 @@ intercambio/
 ## Future Vision
 
 Once the technical foundation is solid, the game will expand to explore social problems through the lens of distributed systems - showing how technical choices leak into human outcomes and teaching that social problems don't get solved, only continuously rebalanced.
+## Design Documents
+
+- `CRYPTOGRAPHIC_PUZZLES.md` - cryptographic mechanics and failure progression
+- `Documentation/BLOCKCHAIN_CAMPAIGN_TREE.md` - concrete 18-level campaign tree, fail states, UI verbs, and unlock sequence
 
 ---
 
